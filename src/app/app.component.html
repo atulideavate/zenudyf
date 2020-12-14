@@ -1,0 +1,6 @@
+<app-header [hidden]="isHeaderHidden"  [isLoggedIn]="isLoggedIn" [link]="link" [isRegistrationPage]="isRegistrationPage" [isSignUpPage]="isSignUpPage" [userName]="userName" [profilePicture]="profilePicture"></app-header>
+<ngx-spinner bdOpacity = 0.9 size = "default" color = "#fff" type = "square-jelly-box" [fullScreen] = "true"></ngx-spinner>
+<div class="wrapper">
+  <router-outlet></router-outlet>
+</div>
+<app-footer [hidden]="isHeaderHidden" [isLoggedIn]="isLoggedIn" [isRegistrationPage]="isRegistrationPage" [isSignUpPage]="isSignUpPage"></app-footer>

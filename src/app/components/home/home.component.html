@@ -1,0 +1,335 @@
+<!-- Page Wrapper -->
+<main class="main-container">
+    <!-- home Page container -->
+    <div class="container-fluid mg-t-30 mb-5 ">
+        <!-- Page Heading -->
+        <div class="az-dashboard-one-title">
+            <div>
+                <h2 class="page-title mb-0" >Welcome to Zenudy</h2>
+                <span class="f-16" >Overview & Stats</span>
+            </div>
+            <div class="az-content-header-right">
+                <div class="media">
+                    <div class="media-body  text-right">
+                        <span class="d-block">Subscription:<strong>Professional</strong></span>
+                        <span class="text-success">Expire: 30 Nov'20</span>
+                    </div><!-- media-body -->
+                </div><!-- media -->
+                <a href="" class="btn btn-primary">Upgrade</a>
+            </div>
+        </div>
+        <!-- close Page Heading -->
+
+        <!--total-count-section-->
+        <div class="row">
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card-box total-info ">
+                    <div class="card-body">
+                        <div class="d-flex mb-2">
+                            <div class="total-img align-items-center text-center justify-content-center mr-2">
+                                <img src="assets/img/users.svg">
+                            </div>
+                            <div class="title">
+                                <small class="d-block f-16 ">Total Candidate</small>
+                                <span class="h2">50</span>
+                            </div>
+                        </div>
+                        <button class="btn  btn-blue w-100">
+                            <img src="assets/img/plus.svg" alt="" class="mr-2"> Add New Candidate
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card-box total-info ">
+                    <div class="card-body">
+                        <div class="d-flex mb-2">
+                            <div class="total-img align-items-center text-center justify-content-center mr-2">
+                                <img src="assets/img/question.svg">
+                            </div>
+                            <div class="title">
+                                <small class="d-block f-16 ">Total Question</small>
+                                <span class="h2">50</span>
+                            </div>
+                        </div>
+                        <button class="btn  btn-pink w-100">
+                            <img src="assets/img/plus.svg" alt="" class="mr-2"> Add New Question
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card-box total-info ">
+                    <div class="card-body">
+                        <div class="d-flex mb-2">
+                            <div class="total-img align-items-center text-center justify-content-center mr-2">
+                                <img src="assets/img/test.svg">
+                            </div>
+                            <div class="title">
+                                <small class="d-block f-16 ">Total Test</small>
+                                <span class="h2">50</span>
+                            </div>
+                        </div>
+                        <button class="btn  btn-green w-100">
+                            <img src="assets/img/plus.svg" alt="" class="mr-2"> Add New Test
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card-box total-info ">
+                    <div class="card-body">
+                        <div class="d-flex mb-2">
+                            <div class="total-img align-items-center text-center justify-content-center mr-2">
+                                <img src="assets/img/product.svg">
+                            </div>
+                            <div class="title">
+                                <small class="d-block f-16 ">Total Product</small>
+                                <span class="h2">50</span>
+                            </div>
+                        </div>
+                        <button class="btn  btn-purple w-100">
+                            <img src="assets/img/plus.svg" alt="" class="mr-2"> Add New Product
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--close-total-count-section-->
+
+        <!--graph-section-->
+        <div class="row ">
+            <div class="col-12 col-lg-6">
+                <div class="card-box candi-graph-sec mb-4">
+	                <div class=" tab-row d-flex justify-content-between pos-relative p-3">
+	                	<ul class="nav nav-tabs" id="myTab" role="tablist">
+	                        <li class="nav-item" role="presentation">
+	                            <a class="nav-link active" id="candidate-tab" 
+	                            data-toggle="tab" href="#candidate" role="tab"
+	                             aria-controls="home" aria-selected="true">Candidate</a>
+	                        </li>
+	                        <li class="nav-item" role="presentation">
+	                            <a class="nav-link" id="test-tab"
+	                             data-toggle="tab" href="#test" 
+	                             role="tab" aria-controls="profile" aria-selected="false">Test</a>
+	                        </li>                       
+	                	</ul>
+                 		<select class="form-control select2-no-search w-auto no-border ">
+	                            <option label="Oct 2020 - Nov 2020"></option>
+	                            <option value="Firefox">Active</option>
+	                    </select>
+	                </div>
+	                <div class="tab-content" id="myTabContent">
+	                	<div class="tab-pane fade show active" id="candidate" 
+	                	role="tabpanel" aria-labelledby="home-tab">
+		                	<div class="graph " >
+		                		<div class="card-body">
+		                			<div class="chart"><canvas id="chartBar1" style="height:205px;"></canvas></div>
+		                		</div>
+		                	</div>                
+		                </div>
+		                <div class="tab-pane fade" id="test" role="tabpanel"
+		                aria-labelledby="profile-tab">
+			                <div class="graph " style="height:254px;">
+			                	<div class="card-body">
+			                		<div class="chart"><canvas id="chartBar5"></canvas></div>
+			                	</div>
+			                </div>
+		            	</div>
+			        </div>
+				</div>
+			</div>
+
+            <div class="col-12 col-lg-6">
+                <div class="row mb-4">
+                    <div class="col-3 col-lg-6 d-sm-flex ">
+                        <div class="card-box card-body mb-0 mb-lg-4">
+                            <h4 class="f-18 mb-4">Subscription Usage</h4>
+                            <div class="d-flex flex-wrap  align-items-center uses-graph">
+                                <div class="mg-b-10 mg-sm-b-0 mg-sm-r-10">
+                                    <span class="peity-donut" 
+                                    data-peity='{ "fill": ["#007bff", "#cad0e8"],  "innerRadius": 14, "radius": 20 }'>4/7</span>
+                                </div>
+                                <div class="media">
+                                    <div class="">
+                                        <label>Total User</label>
+                                        <h6>100</h6>
+                                    </div><!-- media-body -->
+                                </div><!-- media -->
+                                <div class="media">
+                                    <div class="media-body">
+                                        <label>User Left</label>
+                                        <h6>150</h6>
+                                    </div><!-- media-body -->
+                                </div><!-- media -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-lg-6 d-sm-flex ">
+                        <div class="card-box card-body mb-0 mb-lg-4">
+                            <h4 class="f-18 mb-4">Topup Usage</h4>
+                            <div class="d-flex flex-wrap align-items-center uses-graph">
+                                <div class="mg-b-10 mg-sm-b-0 mg-sm-r-10">
+                                <span class="peity-donut" data-peity='{ "fill": ["#007bff", "#cad0e8"],  "innerRadius": 14, "radius": 20 }'>4/7</span>
+                                </div>
+                                <div class="media">
+                                    <div class="">
+                                        <label>Total User</label>
+                                        <h6>100</h6>
+                                    </div><!-- media-body -->
+                                </div><!-- media -->
+                                <div class="media">
+                                    <div class="media-body">
+                                        <label>User Left</label>
+                                        <h6>150</h6>
+                                    </div><!-- media-body -->
+                                </div><!-- media -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3  col-lg-6 d-sm-flex ">
+                        <div class="card-box card-body">
+                            <h4 class="f-18 mb-4">Send Email</h4>
+                            <div class="d-flex flex-wrap  align-items-center uses-graph">
+                                <div class="mg-b-10 mg-sm-b-0 mg-sm-r-10">
+                                    <img src="assets/img/send-email-icon.png" alt="">
+                                </div>
+                                <div class="media">
+                                    <div class="">
+                                        <label>Total User</label>
+                                        <h6>100</h6>
+                                    </div><!-- media-body -->
+                                </div><!-- media -->
+                                <div class="media">
+                                    <div class="media-body">
+                                        <label>User Left</label>
+                                        <h6>150</h6>
+                                    </div><!-- media-body -->
+                                </div><!-- media -->
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-3  col-lg-6 d-sm-flex ">
+                        <div class="card-box card-body">
+                            <h4 class="f-18 mb-4">Send SMS</h4>
+                            <div class="d-flex flex-wrap  align-items-center uses-graph">
+                                <div class="mg-b-10 mg-sm-b-0 mg-sm-r-10">
+                                    <img src="assets/img/send-sms-icon.png" alt="">
+                                </div>
+                                <div class="media">
+                                    <div class="">
+                                        <label>Total User</label>
+                                        <h6>100</h6>
+                                    </div><!-- media-body -->
+                                </div><!-- media -->
+                                <div class="media">
+                                    <div class="media-body">
+                                        <label>User Left</label>
+                                        <h6>150</h6>
+                                    </div><!-- media-body -->
+                                </div><!-- media -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--close-graph-section-->
+
+        <!--tutorial-Activity-Section-->
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="card-box card-body clearfix">
+                	<h4 class="f-18">Tutorial Help</h4>
+                	<div class="thumb1" >
+                		<img src="assets/img/thumb2.png"
+                		class="thumbimg"> <div id="hide2" class="upthumb" style="display:block;">
+                			<img src="assets/img/player.png">
+                			<span>Question Bank</span>
+                		</div>
+                	</div>
+
+                	<div class="thumb1" >
+                		<img src="assets/img/thumb2.png"
+                		class="thumbimg"> <div id="hide2" class="upthumb" style="display:block;">
+                			<img src="assets/img/player.png">
+                			<span>Question Bank</span>
+                		</div>
+                	</div>
+
+                	<div class="thumb1" >
+                		<img src="assets/img/thumb2.png"
+                		class="thumbimg"> <div id="hide2" class="upthumb" style="display:block;">
+                			<img src="assets/img/player.png">
+                			<span>Question Bank</span>
+                		</div>
+                	</div>
+
+                	<div class="thumb1" >
+                		<img src="assets/img/thumb2.png"
+                		class="thumbimg"> <div id="hide2" class="upthumb" style="display:block;">
+                			<img src="assets/img/player.png">
+                			<span>Question Bank</span>
+                		</div>
+                	</div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card-box card-body activity-log">
+                    <div class="d-flex justify-content-between mb-1 align-items-center">
+                        <h4>Recent Activity Log</h4>
+
+                        <select class="form-control  w-auto border-0 p-0">
+                            <option label="All"></option>
+                            <option value="Firefox">Active</option>
+                        </select>
+                    </div>
+                    <ul class="list-group ">
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <div class="mr-2 d-flex align-items-center ">
+                                <div class="user-pic mr-2 ">
+                                    <img src="assets/img/P1090594-1.jpeg" class="mw-100">
+                                </div>
+                                <div class="user-des">
+                                    <h5 class="mb-1"><strong>Ainsley</strong> start Middle ISEE ME00W00 test</h5>
+                                    <span class="text-secondary ">
+                                        5 days ago</span>
+                                </div>
+                            </div>
+                            <span class="arrow">
+                                <img src="assets/img/back.svg" alt="">
+                            </span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <div class="mr-2 d-flex align-items-center ">
+                                <div class="user-pic mr-2 ">
+                                    <img src="assets/img/P1090594-1.jpeg" class="mw-100">
+                                </div>
+                                <div class="user-des">
+                                    <h5 class="mb-1"><strong>Ainsley</strong> start Middle ISEE ME00W00 test</h5>
+                                    <span class="text-secondary ">
+                                        5 days ago</span>
+                                </div>
+                            </div>
+                            <span class="arrow">
+                                <img src="assets/img/back.svg" alt="">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--close-tutorial-Activity-Section-->
+    </div>
+    <!-- home Page Content -->
+</main>
+<!-- End of Page Wrapper -->
